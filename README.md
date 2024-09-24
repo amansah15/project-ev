@@ -18,8 +18,8 @@ Our goal is to make the journey to a charging station as convenient and efficien
 With our Electric Vehicle Charging Stations Locator App, we are committed to facilitating a sustainable future by making electric vehicle charging accessible and user-friendly.
 
 # Team Members
-• <strong> Krishna Kumar Modi - </strong> Implemented APIs on the website and conducted testing.
+• <strong> Krishna Kumar Modi - </strong> Implemented APIs on the website, handled backend and conducted testing.
 
-• <strong> Aryan Soni - </strong> Created pages using frontend development and developed a chatbot.
+• <strong> Aryan Soni - </strong> Created pages using frontend development and develoed chatbot using stack.
 
-• <strong> Aman Kumar Sah </strong> - Handled frontend development using HTML and CSS, and assisted in testing.
+• <strong> Aman Kumar Sah </strong> - Managed frontend development using HTML and CSS, performed backend tasks, and assisted in testing.
