@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nearest EV Charging Stations</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4CAF50;
+      padding: 1rem;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin: 1rem 0;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #45a049;
+    }
+    .map {
+      width: 100%;
+      height: 400px;
+      background-color: #e2e2e2;
+      margin-top: 2rem;
+    }
+    .station-list {
+      margin-top: 2rem;
+    }
+    .station {
+      padding: 1rem;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .station h3 {
+      margin-top: 0;
+    }
+    .station p {
+      margin: 0.5rem 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Find Nearest EV Charging Stations</h1>
+  </header>
+
+  <div class="container">
+    <div class="station-list">
+      <div class="station">
+        <h3>Station 1: Green Park</h3>
+        <p>Location: 123 Green Park St, City Center</p>
+        <p>Available Slots: 4</p>
+        <button class="button">Navigate</button>
+      </div>
+      <div class="station">
+        <h3>Station 2: Tech Hub</h3>
+        <p>Location: 456 Tech Avenue, Downtown</p>
+        <p>Available Slots: 2</p>
+        <button class="button">Navigate</button>
+      </div>
+      <div class="station">
+        <h3>Station 3: Main Street</h3>
+        <p>Location: 789 Main St, Suburbs</p>
+        <p>Available Slots: 6</p>
+        <button class="button">Navigate</button>
+      </div>
+    </div>
+
+    <button class="button" onclick="findNearestStation()">Find Nearest Charging Station</button>
+
+    <div class="map" id="map">
+      <!-- This is where a real map integration would go -->
+      <p style="text-align:center; padding-top: 180px;">Map Loading...</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 EV Charging Locator. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Placeholder function for finding the nearest station
+    function findNearestStation() {
+      alert('Searching for the nearest charging station...');
+      // Here, you can integrate with a real map or API to find the nearest station
+    }
+  </script>
+
+</body>
+</html>

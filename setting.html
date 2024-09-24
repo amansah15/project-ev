@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Settings</title>
+    <link rel="stylesheet" href="./css setting.css"> 
+</head>
+<body>
+    <header>
+        <h1>Vehicle Settings</h1>
+        <button onclick="goBack() "><a href="./index.html">← Back</a></button>
+    </header>
+
+    <main>
+        <section id="general-settings">
+            <h2>General Settings</h2>
+            <label for="language">Language:</label>
+            <select id="language">
+                <option>English</option>
+                <option>Spanish</option>
+                <option>French</option>
+            </select>
+
+            <label for="units">Units of Measurement:</label>
+            <select id="units">
+                <option>Metric</option>
+                <option>Imperial</option>
+            </select>
+
+            <label for="time-format">Time Format:</label>
+            <select id="time-format">
+                <option>12-hour</option>
+                <option>24-hour</option>
+            </select>
+        </section>
+
+        <section id="charging-settings">
+            <h2>Charging Settings</h2>
+            <label for="charging-schedule">Charging Schedule:</label>
+            <input type="time" id="charging-schedule" />
+
+            <label for="charging-limit">Charging Limit:</label>
+            <input type="range" id="charging-limit" min="50" max="100" />
+
+            <label for="preferred-locations">Preferred Charging Locations:</label>
+            <input type="text" id="preferred-locations" placeholder="Enter location" />
+        </section>
+
+        <section id="driving-preferences">
+            <h2>Driving Preferences</h2>
+            <label for="regenerative-braking">Regenerative Braking:</label>
+            <select id="regenerative-braking">
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+
+            <label for="drive-mode">Drive Mode:</label>
+            <select id="drive-mode">
+                <option>Eco</option>
+                <option>Normal</option>
+                <option>Sport</option>
+            </select>
+
+            <label for="steering-sensitivity">Steering Sensitivity:</label>
+            <select id="steering-sensitivity">
+                <option>Comfort</option>
+                <option>Standard</option>
+                <option>Sport</option>
+            </select>
+        </section>
+
+        <section id="climate-control">
+            <h2>Climate Control</h2>
+            <label for="preconditioning">Preconditioning:</label>
+            <input type="checkbox" id="preconditioning" />
+
+            <label for="climate-temp">Temperature Setting:</label>
+            <input type="number" id="climate-temp" placeholder="°C" />
+
+            <label for="defrost-settings">Defrost Settings:</label>
+            <input type="checkbox" id="defrost-settings" />
+        </section>
+
+        <section id="safety-assistance">
+            <h2>Safety & Assistance</h2>
+            <label for="autopilot">Autopilot Features:</label>
+            <input type="checkbox" id="autopilot" />
+
+            <label for="notifications">Notifications:</label>
+            <input type="checkbox" id="notifications" />
+
+            <label for="driver-profile">Driver Profile:</label>
+            <input type="text" id="driver-profile" placeholder="Enter driver name" />
+        </section>
+
+        <section id="connectivity">
+            <h2>Connectivity</h2>
+            <label for="bluetooth">Bluetooth Settings:</label>
+            <input type="text" id="bluetooth" placeholder="Manage devices" />
+
+            <label for="wifi">Wi-Fi Settings:</label>
+            <input type="text" id="wifi" placeholder="Network name" />
+
+            <label for="app-integration">App Integration:</label>
+            <input type="checkbox" id="app-integration" />
+        </section>
+
+        <section id="updates">
+            <h2>Updates & Information</h2>
+            <button onclick="checkUpdates()">Check for Updates</button>
+            <p>Vehicle Information: <span id="vehicle-info">Battery health, mileage, service history</span></p>
+            <button onclick="openSupport()">Help & Support</button>
+        </section>
+    </main>
+
+    <footer>
+        <button onclick="saveChanges()">Save Changes</button>
+        <button onclick="resetDefaults()">Reset to Default</button>
+        <button onclick="logout()">Logout</button>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Battery Status</title>
+    <link rel="stylesheet" href="./batt.css">
+</head>
+<body>
+
+    <header>
+        <h1>Electric Vehicle Battery Monitoring</h1>
+        <nav>
+            <ul>
+                <li><a href="#battery-status">Battery Status</a></li>
+                <li><a href="#distance-covered">Distance Covered</a></li>
+                <li><a href="#device-updates">Device Updates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="battery-status" class="content">
+        <h2>Battery Condition</h2>
+        <div class="battery-info">
+            <p>Battery Level: <span class="battery-percentage">80%</span></p>
+            <div class="battery-bar">
+                <div class="battery-fill" style="width: 80%;"></div>
+            </div>
+            <p>Estimated Range: <span class="range">150 km</span></p>
+        </div>
+    </section>
+
+    <section id="distance-covered" class="content">
+        <h2>Distance Details</h2>
+        <div class="distance-info">
+            <p>Total Distance Covered: <span class="distance-covered">320 km</span></p>
+            <p>Remaining Distance: <span class="remaining-distance">150 km</span></p>
+        </div>
+    </section>
+
+    <section id="device-updates" class="content">
+        <h2>Device Updates</h2>
+        <div class="updates-info">
+            <ul>
+                <li>Software Version: <span class="update">v2.3.1</span></li>
+                <li>Last Update: <span class="update">2024-09-22</span></li>
+                <li>Next Scheduled Maintenance: <span class="update">2024-11-15</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EV Battery Monitoring. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

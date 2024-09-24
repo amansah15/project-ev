@@ -1,0 +1,251 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.content {
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.station-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.station {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 30%;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.station h3 {
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+}
+
+.station p {
+    margin: 0.5rem 0;
+}
+
+.available {
+    color: green;
+    font-weight: bold;
+}
+
+.full {
+    color: red;
+    font-weight: bold;
+}
+
+.maintenance {
+    color: orange;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header Animation */
+.animated-header {
+    background-color: #4CAF50;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+    transform: scale(1.1);
+}
+
+/* Content Section Animation */
+.content {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-title {
+    color: #4CAF50;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    animation: zoomIn 1s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Station Cards Animation */
+.station-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.station {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+.station:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.available {
+    color: green;
+    font-weight: bold;
+}
+
+.full {
+    color: red;
+    font-weight: bold;
+}
+
+.maintenance {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Footer Animation */
+.animated-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
